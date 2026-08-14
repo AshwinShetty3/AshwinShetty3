@@ -1,56 +1,164 @@
-<h1>Hi 👋, I'm Ashwin Shetty</h1>
-<p>DevOps Enthusiast with a Passion for Software Development.</p>
+<div align="center">
+  <!-- Typing Header SVG -->
+  <a href="https://ashwinshetty.site/">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=00F2FE&center=true&vCenter=true&repeat=true&width=700&height=70&lines=Hi+there!+I'm+Ashwin+Shetty+👋;DevOps+%26+Cloud+Infrastructure+Engineer+🚀;Kubernetes+%26+Docker+Specialist+🐳;Automating+CI%2FCD+%26+IaC+at+Scale+⚡" alt="Typing Header" />
+  </a>
 
-## 🌐 Socials:
-<div align="left">
- <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ashwinbshetty373@gmail.com" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=flat" height="35" alt="gmail logo" style="border-radius: 8px;" />
-  </a>
-  <a href="https://www.linkedin.com/in/ashwin-shetty-264528217/" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=flat" height="35" alt="linkedin logo" style="border-radius: 8px;" />
-  </a>
-  <a href="https://ashwinshetty.site/" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Portfolio&logo=firefox&label=&color=6A0DAD&logoColor=white&labelColor=&style=flat" height="35" alt="portfolio logo" style="border-radius: 8px;" />
-  </a>
+  <p align="center">
+    <b>Building resilient cloud systems, automating end-to-end CI/CD pipelines, and bridging code with infrastructure.</b>
+  </p>
+
+  <!-- Visitor Counter & Quick Status Badges -->
+  <p align="center">
+    <a href="https://ashwinshetty.site/">
+      <img src="https://img.shields.io/badge/Website-ashwinshetty.site-00f2fe?style=for-the-badge&logo=google-chrome&logoColor=black" alt="Portfolio" />
+    </a>
+    <a href="https://www.linkedin.com/in/ashwin-shetty-264528217/">
+      <img src="https://img.shields.io/badge/LinkedIn-Ashwin--Shetty-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+    </a>
+    <a href="mailto:ashwinbshetty373@gmail.com">
+      <img src="https://img.shields.io/badge/Gmail-Contact--Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
+    </a>
+    <img src="https://komarev.com/ghpvc/?username=AshwinShetty3&color=00f2fe&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views" />
+  </p>
 </div>
 
-# 💻 Tech Stack:
-![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=flat&logo=amazon-aws&logoColor=white)
-![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=flat&logo=docker&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=flat&logo=kubernetes&logoColor=white)
-![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=flat&logo=terraform&logoColor=white)
-![Jenkins](https://img.shields.io/badge/jenkins-%232C5263.svg?style=flat&logo=jenkins&logoColor=white)
-![Ansible](https://img.shields.io/badge/ansible-%231A1918.svg?style=flat&logo=ansible&logoColor=white)
-![Grafana](https://img.shields.io/badge/grafana-%23F46800.svg?style=flat&logo=grafana&logoColor=white)
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=flat&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=flat&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=flat&logo=javascript&logoColor=%23F7DF1E)
+<br/>
 
-![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=flat&logo=github&logoColor=white)
-![Git](https://img.shields.io/badge/git-%23F05033.svg?style=flat&logo=git&logoColor=white)
-![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat&logo=postman&logoColor=white)
-![Python](https://img.shields.io/badge/python-3670A0?style=flat&logo=python&logoColor=ffdd54)
-# 📊 GitHub Stats:
-  <div align="center">
-   <img src="https://nirzak-streak-stats.vercel.app/?user=AshwinShetty3&theme=dark&hide_border=false&border_radius=5&order=3" height="220" alt="streak graph" />
-</div>
+<!-- ========================================== -->
+<!-- TERMINAL / ABOUT ME                        -->
+<!-- ========================================== -->
+<table align="center" width="100%">
+  <tr>
+    <td bgcolor="#0d1117">
+      <pre><code><font color="#00f2fe"><b>ashwin@devops-control-plane</b></font>:<font color="#79c0ff"><b>~</b></font>$ cat about_me.json
+{
+  <font color="#79c0ff">"name"</font>: <font color="#a5d6ff">"Ashwin Shetty"</font>,
+  <font color="#79c0ff">"role"</font>: <font color="#a5d6ff">"DevOps & Infrastructure Automation Engineer"</font>,
+  <font color="#79c0ff">"cloud_focus"</font>: [<font color="#a5d6ff">"AWS"</font>, <font color="#a5d6ff">"Kubernetes"</font>, <font color="#a5d6ff">"Terraform"</font>, <font color="#a5d6ff">"Docker"</font>],
+  <font color="#79c0ff">"philosophy"</font>: <font color="#a5d6ff">"Automate everything, monitor continuously, deploy with zero downtime."</font>,
+  <font color="#79c0ff">"current_focus"</font>: <font color="#a5d6ff">"Designing High-Availability Cloud Architectures & GitOps Workflows"</font>,
+  <font color="#79c0ff">"status"</font>: <font color="#7ee787">"Ready for high-impact DevOps & Infrastructure roles 🟢"</font>
+}</code></pre>
+    </td>
+  </tr>
+</table>
 
+<br/>
+
+<!-- ========================================== -->
+<!-- VISUAL CI/CD WORKFLOW                      -->
+<!-- ========================================== -->
+<h2 align="center">⚙️ DevOps Automation Pipeline</h2>
 
 <div align="center">
- <img src="https://github-readme-stats.vercel.app/api?username=AshwinShetty3&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false&order=1" height="150" alt="stats graph"  />
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AshwinShetty3&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false" height="150" alt="top languages" />
+  <img src="https://img.shields.io/badge/1._Code-Git%20%7C%20GitHub%20%7C%20GitLab-181717?style=for-the-badge&logo=github&logoColor=white" />
+  <b>➜</b>
+  <img src="https://img.shields.io/badge/2._CI%2FCD-Jenkins%20%7C%20GitHub%20Actions-D24939?style=for-the-badge&logo=jenkins&logoColor=white" />
+  <b>➜</b>
+  <img src="https://img.shields.io/badge/3._Containerize-Docker%20%7C%20Harbor-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+  <b>➜</b>
+  <img src="https://img.shields.io/badge/4._Orchestrate-Kubernetes%20%7C%20K8s-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" />
+  <b>➜</b>
+  <img src="https://img.shields.io/badge/5._Provision-Terraform%20%7C%20AWS-844FBA?style=for-the-badge&logo=terraform&logoColor=white" />
+  <b>➜</b>
+  <img src="https://img.shields.io/badge/6._Monitor-Grafana%20%7C%20Prometheus-F46800?style=for-the-badge&logo=grafana&logoColor=white" />
 </div>
 
+<br/>
 
-###
+<!-- ========================================== -->
+<!-- TECH STACK CATEGORIZED                    -->
+<!-- ========================================== -->
+<h2>🛠️ Tech Stack & DevOps Ecosystem</h2>
 
-<img src="https://raw.githubusercontent.com/ashwin12377/ashwin12377/output/snake.svg" alt="Snake animation" />
+<table width="100%">
+  <tr>
+    <td width="33%" valign="top">
+      <h4>☁️ Cloud & Infrastructure</h4>
+      <img src="https://img.shields.io/badge/AWS-FF9900?style=flat-square&logo=amazon-aws&logoColor=white" />
+      <img src="https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white" />
+      <img src="https://img.shields.io/badge/Ansible-EE0000?style=flat-square&logo=ansible&logoColor=white" />
+      <img src="https://img.shields.io/badge/Linux/Bash-FCC624?style=flat-square&logo=linux&logoColor=black" />
+    </td>
+    <td width="33%" valign="top">
+      <h4>🐳 Containers & K8s</h4>
+      <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
+      <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white" />
+      <img src="https://img.shields.io/badge/Helm-0F1689?style=flat-square&logo=helm&logoColor=white" />
+    </td>
+    <td width="33%" valign="top">
+      <h4>🔄 CI/CD & Version Control</h4>
+      <img src="https://img.shields.io/badge/Jenkins-D24939?style=flat-square&logo=jenkins&logoColor=white" />
+      <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white" />
+      <img src="https://img.shields.io/badge/GitLab_CI-FC6D26?style=flat-square&logo=gitlab&logoColor=white" />
+      <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" />
+    </td>
+  </tr>
+  <tr>
+    <td width="33%" valign="top">
+      <h4>📊 Observability & Logs</h4>
+      <img src="https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white" />
+      <img src="https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white" />
+    </td>
+    <td width="33%" valign="top">
+      <h4>💻 Languages & Backend</h4>
+      <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
+      <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" />
+      <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
+      <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" />
+      <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" />
+    </td>
+    <td width="33%" valign="top">
+      <h4>🗄️ Databases & Tools</h4>
+      <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" />
+      <img src="https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white" />
+    </td>
+  </tr>
+</table>
 
-## 🏆 GitHub Trophies
-![](https://github-profile-trophy.vercel.app/?username=AshwinShetty3&theme=radical&no-frame=false&no-bg=true&margin-w=4)
+<br/>
 
----
-[![](https://visitcount.itsvg.in/api?id=AshwinShetty3&icon=0&color=0)](https://visitcount.itsvg.in)
+<!-- ========================================== -->
+<!-- SNAKE ANIMATION SECTION                    -->
+<!-- ========================================== -->
+<h2 align="center">🐍 Contribution Snake</h2>
 
+<div align="center">
+  <img src="https://raw.githubusercontent.com/AshwinShetty3/AshwinShetty3/output/snake.svg" alt="Contribution Snake Animation" width="100%" />
+</div>
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+<br/>
+
+<!-- ========================================== -->
+<!-- GITHUB STATS & ANALYTICS                   -->
+<!-- ========================================== -->
+<h2 align="center">📈 GitHub Activity & Analytics</h2>
+
+<div align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=AshwinShetty3&theme=tokyonight&hide_border=true" height="170" alt="GitHub Streak Stats" />
+  <img src="https://github-readme-stats.vercel.app/api?username=AshwinShetty3&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" height="170" alt="GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AshwinShetty3&layout=compact&theme=tokyonight&hide_border=true&card_width=300" height="170" alt="Top Languages" />
+</div>
+
+<br/>
+
+<!-- ========================================== -->
+<!-- GITHUB TROPHIES                            -->
+<!-- ========================================== -->
+<h2 align="center">🏆 GitHub Achievements & Trophies</h2>
+
+<div align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=AshwinShetty3&theme=tokyonight&no-frame=true&column=6&margin-w=10" alt="GitHub Trophies" />
+</div>
+
+<br/>
+
+<!-- ========================================== -->
+<!-- FOOTER                                     -->
+<!-- ========================================== -->
+<hr/>
+<div align="center">
+  <p><i>⚡ "Infrastructure as Code, Deployment as a Culture." ⚡</i></p>
+  <p>Designed with ❤️ by <b><a href="https://ashwinshetty.site/">Ashwin Shetty</a></b></p>
+</div>
