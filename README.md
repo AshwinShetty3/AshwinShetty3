@@ -28,21 +28,9 @@
 <!-- ========================================== -->
 <!-- TERMINAL / ABOUT ME                        -->
 <!-- ========================================== -->
-<table align="center" width="100%">
-  <tr>
-    <td bgcolor="#0d1117">
-      <pre><code><font color="#00f2fe"><b>ashwin@devops-control-plane</b></font>:<font color="#79c0ff"><b>~</b></font>$ cat about_me.json
-{
-  <font color="#79c0ff">"name"</font>: <font color="#a5d6ff">"Ashwin Shetty"</font>,
-  <font color="#79c0ff">"role"</font>: <font color="#a5d6ff">"DevOps & Infrastructure Automation Engineer"</font>,
-  <font color="#79c0ff">"cloud_focus"</font>: [<font color="#a5d6ff">"AWS"</font>, <font color="#a5d6ff">"Kubernetes"</font>, <font color="#a5d6ff">"Terraform"</font>, <font color="#a5d6ff">"Docker"</font>],
-  <font color="#79c0ff">"philosophy"</font>: <font color="#a5d6ff">"Automate everything, monitor continuously, deploy with zero downtime."</font>,
-  <font color="#79c0ff">"current_focus"</font>: <font color="#a5d6ff">"Designing High-Availability Cloud Architectures & GitOps Workflows"</font>,
-  <font color="#79c0ff">"status"</font>: <font color="#7ee787">"Ready for high-impact DevOps & Infrastructure roles 🟢"</font>
-}</code></pre>
-    </td>
-  </tr>
-</table>
+<div align="center">
+  <img src="https://raw.githubusercontent.com/AshwinShetty3/AshwinShetty3/main/assets/coder_boy.svg" width="100%" alt="Ashwin Shetty - Animated Coder Boy Terminal" />
+</div>
 
 <br/>
 
