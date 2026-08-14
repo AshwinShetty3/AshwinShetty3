@@ -135,7 +135,7 @@
 <h2 align="center">📈 GitHub Activity & Analytics</h2>
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=AshwinShetty3&theme=tokyo-night&stroke=00f2fe&background=0d1117" width="100%" alt="GitHub Activity Graph" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=sindresorhus&theme=tokyo-night&stroke=00f2fe&background=0d1117&custom_title=Ashwin%20Shetty's%20Contribution%20Graph" width="100%" alt="GitHub Activity Graph" />
 </div>
 
 <br/>
