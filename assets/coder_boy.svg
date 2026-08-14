@@ -1,160 +1,274 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 300" width="100%" height="300">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 320" width="100%" height="320">
   <defs>
     <linearGradient id="termBg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#0d1117" />
       <stop offset="100%" stop-color="#161b22" />
     </linearGradient>
-    <linearGradient id="neonGlow" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00f2fe" />
-      <stop offset="100%" stop-color="#79c0ff" />
-    </linearGradient>
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="3" result="blur" />
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="4" />
     </filter>
   </defs>
 
   <style>
-    @font-face {
-      font-family: 'Fira Code', monospace;
-    }
-    .term-title { font: 600 13px 'Fira Code', monospace; fill: #8b949e; }
-    .code-prompt { font: 600 14px 'Fira Code', monospace; fill: #00f2fe; }
-    .code-key { font: 500 13.5px 'Fira Code', monospace; fill: #79c0ff; }
-    .code-val { font: 500 13.5px 'Fira Code', monospace; fill: #a5d6ff; }
-    .code-green { font: 500 13.5px 'Fira Code', monospace; fill: #7ee787; }
-    .code-symbol { font: 500 13.5px 'Fira Code', monospace; fill: #e34f26; }
+    @keyframes typeLine1 { 0%,5% { opacity:0; } 10%,100% { opacity:1; } }
+    @keyframes typeLine2 { 0%,15% { opacity:0; } 22%,100% { opacity:1; } }
+    @keyframes typeLine3 { 0%,28% { opacity:0; } 36%,100% { opacity:1; } }
+    @keyframes typeLine4 { 0%,42% { opacity:0; } 50%,100% { opacity:1; } }
+    @keyframes typeLine5 { 0%,55% { opacity:0; } 64%,100% { opacity:1; } }
+    @keyframes typeLine6 { 0%,68% { opacity:0; } 78%,100% { opacity:1; } }
 
-    /* Typewriter animation line by line */
-    @keyframes typeLine1 { 0%, 0% { width: 0; } 15%, 100% { width: 320px; } }
-    @keyframes typeLine2 { 0%, 15% { width: 0; } 30%, 100% { width: 480px; } }
-    @keyframes typeLine3 { 0%, 30% { width: 0; } 50%, 100% { width: 440px; } }
-    @keyframes typeLine4 { 0%, 50% { width: 0; } 70%, 100% { width: 510px; } }
-    @keyframes typeLine5 { 0%, 70% { width: 0; } 85%, 100% { width: 420px; } }
+    @keyframes blink { 0%,100% { opacity:1; } 50% { opacity:0; } }
+    @keyframes float { 0%,100% { transform:translateY(0); } 50% { transform:translateY(-8px); } }
+    @keyframes breathe { 0%,100% { transform:scaleY(1); } 50% { transform:scaleY(1.02); } }
+    @keyframes screenGlow { 0%,100% { opacity:0.6; } 50% { opacity:1; } }
+    @keyframes handWave { 0%,100% { transform:rotate(0deg); } 25% { transform:rotate(-4deg); } 75% { transform:rotate(4deg); } }
+    @keyframes badgeFloat1 { 0%,100% { transform:translateY(0) rotate(0deg); } 50% { transform:translateY(-6px) rotate(3deg); } }
+    @keyframes badgeFloat2 { 0%,100% { transform:translateY(0) rotate(0deg); } 50% { transform:translateY(-8px) rotate(-3deg); } }
+    @keyframes badgeFloat3 { 0%,100% { transform:translateY(0) rotate(0deg); } 50% { transform:translateY(-5px) rotate(2deg); } }
+    @keyframes coffeeSteam { 0%,100% { opacity:0; transform:translateY(0) scale(1); } 50% { opacity:0.6; transform:translateY(-12px) scale(1.3); } }
 
-    @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
-    @keyframes floatDev { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-6px); } }
-    @keyframes handType { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-3px); } }
-    @keyframes ideaFloat { 0%, 100% { transform: translateY(0px) scale(1); } 50% { transform: translateY(-8px) scale(1.05); } }
-
-    .line-container { overflow: hidden; white-space: nowrap; display: inline-block; }
-    .l1 { animation: typeLine1 10s steps(30, end) infinite; }
-    .l2 { animation: typeLine2 10s steps(40, end) infinite; }
-    .l3 { animation: typeLine3 10s steps(35, end) infinite; }
-    .l4 { animation: typeLine4 10s steps(45, end) infinite; }
-    .l5 { animation: typeLine5 10s steps(35, end) infinite; }
-
-    .cursor { animation: blink 0.8s infinite; fill: #00f2fe; }
-    .dev-avatar { animation: floatDev 4s ease-in-out infinite; }
-    .dev-hands { animation: handType 0.3s ease-in-out infinite; }
-    .idea-badge { animation: ideaFloat 3s ease-in-out infinite; }
+    .l1 { animation: typeLine1 12s ease infinite; }
+    .l2 { animation: typeLine2 12s ease infinite; }
+    .l3 { animation: typeLine3 12s ease infinite; }
+    .l4 { animation: typeLine4 12s ease infinite; }
+    .l5 { animation: typeLine5 12s ease infinite; }
+    .l6 { animation: typeLine6 12s ease infinite; }
+    .cursor { animation: blink 0.7s step-end infinite; }
+    .dev-float { animation: float 4s ease-in-out infinite; }
+    .dev-breathe { animation: breathe 3s ease-in-out infinite; }
+    .screen-pulse { animation: screenGlow 3s ease-in-out infinite; }
+    .hand-anim { animation: handWave 0.4s ease-in-out infinite; transform-origin: 690px 245px; }
+    .bf1 { animation: badgeFloat1 5s ease-in-out infinite; }
+    .bf2 { animation: badgeFloat2 6s ease-in-out infinite 0.5s; }
+    .bf3 { animation: badgeFloat3 4.5s ease-in-out infinite 1s; }
+    .bf4 { animation: badgeFloat1 5.5s ease-in-out infinite 1.5s; }
+    .steam { animation: coffeeSteam 3s ease-in-out infinite; }
+    .steam2 { animation: coffeeSteam 3s ease-in-out infinite 1s; }
   </style>
 
-  <!-- Main Terminal Outer Box -->
-  <rect x="10" y="10" width="860" height="280" rx="12" fill="url(#termBg)" stroke="#30363d" stroke-width="1.5" filter="drop-shadow(0 8px 24px rgba(0,0,0,0.5))" />
+  <!-- ===== OUTER FRAME ===== -->
+  <rect x="0" y="0" width="900" height="320" rx="14" fill="url(#termBg)" stroke="#30363d" stroke-width="1" />
 
-  <!-- Terminal Header Bar -->
-  <path d="M 10 22 C 10 15, 15 10, 22 10 L 868 10 C 875 10, 880 15, 880 22 L 880 45 L 10 45 Z" fill="#161b22" stroke="#30363d" stroke-width="1" />
-  
-  <!-- Window Control Buttons -->
-  <circle cx="32" cy="27" r="6" fill="#ff5f56" />
-  <circle cx="52" cy="27" r="6" fill="#ffbd2e" />
-  <circle cx="72" cy="27" r="6" fill="#27c93f" />
+  <!-- ===== TERMINAL HEADER BAR ===== -->
+  <rect x="0" y="0" width="900" height="38" rx="14" fill="#1c2128" />
+  <rect x="0" y="24" width="900" height="14" fill="#1c2128" />
+  <circle cx="22" cy="19" r="6.5" fill="#ff5f57" />
+  <circle cx="42" cy="19" r="6.5" fill="#febc2e" />
+  <circle cx="62" cy="19" r="6.5" fill="#28c840" />
+  <text x="450" y="24" text-anchor="middle" font-family="'SF Mono','Fira Code',monospace" font-size="12" fill="#8b949e" font-weight="600">ashwin@devops ~ zsh — 80×24</text>
 
-  <!-- Terminal Title -->
-  <text x="440" y="32" text-anchor="middle" class="term-title">ashwin@devops-control-plane:~ (zsh)</text>
+  <!-- ===== LEFT SIDE: TERMINAL CODE ===== -->
 
-  <!-- Prompt Command Line -->
-  <text x="30" y="70" class="code-prompt">ashwin@devops-control-plane:~$ <tspan fill="#ffffff">cat about_me.json</tspan></text>
-  <text x="30" y="92" class="code-val">{</text>
+  <!-- Prompt line -->
+  <text x="24" y="66" font-family="'SF Mono','Fira Code',monospace" font-size="13" font-weight="700" fill="#00f2fe">❯</text>
+  <text x="40" y="66" font-family="'SF Mono','Fira Code',monospace" font-size="13" fill="#e6edf3">cat about_me.json</text>
 
-  <!-- Animated Typing Lines -->
-  <g transform="translate(45, 115)">
-    <!-- Line 1: Name -->
-    <g class="line-container l1">
-      <text class="code-key">"name"<tspan class="code-val">: </tspan><tspan class="code-green">"Ashwin Shetty"</tspan><tspan class="code-val">,</tspan></text>
-    </g>
+  <!-- Opening brace -->
+  <text x="24" y="90" font-family="'SF Mono','Fira Code',monospace" font-size="13" fill="#e6edf3">{</text>
+
+  <!-- Line 1 -->
+  <g class="l1">
+    <text x="44" y="112" font-family="'SF Mono','Fira Code',monospace" font-size="13">
+      <tspan fill="#79c0ff">"name"</tspan><tspan fill="#e6edf3">: </tspan><tspan fill="#a5d6ff">"Ashwin Shetty"</tspan><tspan fill="#e6edf3">,</tspan>
+    </text>
   </g>
 
-  <g transform="translate(45, 140)">
-    <!-- Line 2: Role -->
-    <g class="line-container l2">
-      <text class="code-key">"role"<tspan class="code-val">: </tspan><tspan class="code-green">"DevOps &amp; Infrastructure Engineer"</tspan><tspan class="code-val">,</tspan></text>
-    </g>
+  <!-- Line 2 -->
+  <g class="l2">
+    <text x="44" y="134" font-family="'SF Mono','Fira Code',monospace" font-size="13">
+      <tspan fill="#79c0ff">"role"</tspan><tspan fill="#e6edf3">: </tspan><tspan fill="#a5d6ff">"DevOps &amp; Cloud Engineer"</tspan><tspan fill="#e6edf3">,</tspan>
+    </text>
   </g>
 
-  <g transform="translate(45, 165)">
-    <!-- Line 3: Focus -->
-    <g class="line-container l3">
-      <text class="code-key">"cloud_focus"<tspan class="code-val">: [</tspan><tspan class="code-green">"AWS"</tspan><tspan class="code-val">, </tspan><tspan class="code-green">"K8s"</tspan><tspan class="code-val">, </tspan><tspan class="code-green">"Terraform"</tspan><tspan class="code-val">],</tspan></text>
-    </g>
+  <!-- Line 3 -->
+  <g class="l3">
+    <text x="44" y="156" font-family="'SF Mono','Fira Code',monospace" font-size="13">
+      <tspan fill="#79c0ff">"stack"</tspan><tspan fill="#e6edf3">: [</tspan><tspan fill="#a5d6ff">"AWS"</tspan><tspan fill="#e6edf3">, </tspan><tspan fill="#a5d6ff">"K8s"</tspan><tspan fill="#e6edf3">, </tspan><tspan fill="#a5d6ff">"Terraform"</tspan><tspan fill="#e6edf3">, </tspan><tspan fill="#a5d6ff">"Docker"</tspan><tspan fill="#e6edf3">],</tspan>
+    </text>
   </g>
 
-  <g transform="translate(45, 190)">
-    <!-- Line 4: Philosophy -->
-    <g class="line-container l4">
-      <text class="code-key">"philosophy"<tspan class="code-val">: </tspan><tspan class="code-green">"Automate everything, deploy smoothly."</tspan><tspan class="code-val">,</tspan></text>
-    </g>
+  <!-- Line 4 -->
+  <g class="l4">
+    <text x="44" y="178" font-family="'SF Mono','Fira Code',monospace" font-size="13">
+      <tspan fill="#79c0ff">"cicd"</tspan><tspan fill="#e6edf3">: [</tspan><tspan fill="#a5d6ff">"Jenkins"</tspan><tspan fill="#e6edf3">, </tspan><tspan fill="#a5d6ff">"GitHub Actions"</tspan><tspan fill="#e6edf3">, </tspan><tspan fill="#a5d6ff">"GitLab CI"</tspan><tspan fill="#e6edf3">],</tspan>
+    </text>
   </g>
 
-  <g transform="translate(45, 215)">
-    <!-- Line 5: Status -->
-    <g class="line-container l5">
-      <text class="code-key">"status"<tspan class="code-val">: </tspan><tspan class="code-green">"Ready for high-impact roles 🟢"</tspan></text>
-    </g>
+  <!-- Line 5 -->
+  <g class="l5">
+    <text x="44" y="200" font-family="'SF Mono','Fira Code',monospace" font-size="13">
+      <tspan fill="#79c0ff">"motto"</tspan><tspan fill="#e6edf3">: </tspan><tspan fill="#a5d6ff">"Automate everything, ship fast"</tspan><tspan fill="#e6edf3">,</tspan>
+    </text>
   </g>
 
-  <text x="30" y="240" class="code-val">}</text>
-  <rect x="42" y="228" width="8" height="15" class="cursor" />
-
-  <!-- RIGHT SIDE: ANIMATED DEVELOPER BOY WORKSTATION -->
-  <g transform="translate(620, 45)" class="dev-avatar">
-    <!-- Glowing Desk Desk Line -->
-    <rect x="0" y="195" width="220" height="6" rx="3" fill="#30363d" />
-
-    <!-- Laptop Container & Glow Screen -->
-    <path d="M 45 140 L 135 140 L 145 195 L 35 195 Z" fill="#161b22" stroke="#00f2fe" stroke-width="1.5" />
-    <polygon points="50,145 130,145 138,190 42,190" fill="#0d1117" opacity="0.9" />
-    <!-- Screen Code Lines Glow -->
-    <line x1="55" y1="155" x2="115" y2="155" stroke="#00f2fe" stroke-width="2" opacity="0.8" />
-    <line x1="55" y1="165" x2="100" y2="165" stroke="#79c0ff" stroke-width="2" opacity="0.7" />
-    <line x1="55" y1="175" x2="125" y2="175" stroke="#7ee787" stroke-width="2" opacity="0.9" />
-
-    <!-- Laptop Base -->
-    <rect x="25" y="193" width="130" height="6" rx="2" fill="#8b949e" />
-
-    <!-- Coder Boy Avatar -->
-    <!-- Head & Hair -->
-    <circle cx="140" cy="85" r="28" fill="#ffdbac" />
-    <path d="M 115 80 C 115 55, 165 55, 165 80 C 160 65, 120 65, 115 80 Z" fill="#4a2c11" />
-    <!-- Glasses -->
-    <circle cx="130" cy="85" r="7" fill="none" stroke="#0d1117" stroke-width="2" />
-    <circle cx="146" cy="85" r="7" fill="none" stroke="#0d1117" stroke-width="2" />
-    <line x1="137" y1="85" x2="139" y2="85" stroke="#0d1117" stroke-width="2" />
-    <!-- Headphones -->
-    <path d="M 110 85 A 32 32 0 0 1 170 85" fill="none" stroke="#00f2fe" stroke-width="4" filter="url(#glow)" />
-    <rect x="108" y="78" width="6" height="16" rx="3" fill="#00f2fe" />
-    <rect x="166" y="78" width="6" height="16" rx="3" fill="#00f2fe" />
-
-    <!-- Body & Hoodie -->
-    <path d="M 105 115 C 105 115, 140 108, 175 115 L 185 195 L 95 195 Z" fill="#1f6feb" />
-
-    <!-- Animated Typing Hands -->
-    <g class="dev-hands">
-      <ellipse cx="80" cy="188" rx="8" ry="4" fill="#ffdbac" />
-      <ellipse cx="95" cy="186" rx="8" ry="4" fill="#ffdbac" />
-    </g>
-
-    <!-- Floating Idea Tech Badges -->
-    <g class="idea-badge">
-      <rect x="15" y="40" width="50" height="22" rx="6" fill="#161b22" stroke="#ff9900" stroke-width="1" />
-      <text x="40" y="55" text-anchor="middle" font-family="'Fira Code', monospace" font-size="10" font-weight="bold" fill="#ff9900">AWS</text>
-
-      <rect x="150" y="25" width="50" height="22" rx="6" fill="#161b22" stroke="#326ce5" stroke-width="1" />
-      <text x="175" y="40" text-anchor="middle" font-family="'Fira Code', monospace" font-size="10" font-weight="bold" fill="#326ce5">K8s</text>
-
-      <rect x="90" y="10" width="55" height="22" rx="6" fill="#161b22" stroke="#2496ed" stroke-width="1" />
-      <text x="117" y="25" text-anchor="middle" font-family="'Fira Code', monospace" font-size="10" font-weight="bold" fill="#2496ed">Docker</text>
-    </g>
+  <!-- Line 6 -->
+  <g class="l6">
+    <text x="44" y="222" font-family="'SF Mono','Fira Code',monospace" font-size="13">
+      <tspan fill="#79c0ff">"status"</tspan><tspan fill="#e6edf3">: </tspan><tspan fill="#7ee787">"Open to opportunities"</tspan>
+    </text>
+    <!-- Green dot -->
+    <circle cx="328" cy="218" r="4" fill="#3fb950" filter="url(#glow)" />
   </g>
+
+  <!-- Closing brace -->
+  <g class="l6">
+    <text x="24" y="244" font-family="'SF Mono','Fira Code',monospace" font-size="13" fill="#e6edf3">}</text>
+  </g>
+
+  <!-- Blinking cursor -->
+  <rect x="34" y="233" width="8" height="16" rx="1" fill="#00f2fe" class="cursor" />
+
+  <!-- Next prompt -->
+  <g class="l6">
+    <text x="24" y="270" font-family="'SF Mono','Fira Code',monospace" font-size="13" font-weight="700" fill="#00f2fe">❯</text>
+    <rect x="40" y="258" width="8" height="16" rx="1" fill="#00f2fe" class="cursor" />
+  </g>
+
+  <!-- ===== DIVIDER LINE ===== -->
+  <line x1="560" y1="50" x2="560" y2="310" stroke="#30363d" stroke-width="1" stroke-dasharray="4,4" opacity="0.5" />
+
+  <!-- ===== RIGHT SIDE: ANIMATED DEV BOY ===== -->
+  <g class="dev-float">
+
+    <!-- DESK -->
+    <rect x="590" y="268" width="280" height="8" rx="4" fill="#21262d" />
+
+    <!-- MONITOR STAND -->
+    <rect x="700" y="260" width="8" height="14" rx="2" fill="#484f58" />
+    <rect x="685" y="270" width="38" height="5" rx="2" fill="#484f58" />
+
+    <!-- MONITOR -->
+    <rect x="640" y="150" width="128" height="115" rx="8" fill="#0d1117" stroke="#484f58" stroke-width="2" />
+    <rect x="648" y="158" width="112" height="98" rx="4" fill="#0d1117" />
+
+    <!-- MONITOR SCREEN GLOW -->
+    <rect x="648" y="158" width="112" height="98" rx="4" fill="#00f2fe" opacity="0.03" class="screen-pulse" />
+
+    <!-- CODE ON SCREEN -->
+    <g class="screen-pulse">
+      <line x1="656" y1="172" x2="708" y2="172" stroke="#00f2fe" stroke-width="2.5" opacity="0.8" />
+      <line x1="656" y1="184" x2="732" y2="184" stroke="#79c0ff" stroke-width="2.5" opacity="0.6" />
+      <line x1="656" y1="196" x2="718" y2="196" stroke="#7ee787" stroke-width="2.5" opacity="0.7" />
+      <line x1="656" y1="208" x2="746" y2="208" stroke="#a5d6ff" stroke-width="2.5" opacity="0.5" />
+      <line x1="656" y1="220" x2="698" y2="220" stroke="#ff7b72" stroke-width="2.5" opacity="0.6" />
+      <line x1="656" y1="232" x2="740" y2="232" stroke="#d2a8ff" stroke-width="2.5" opacity="0.5" />
+      <rect x="747" y="228" width="6" height="10" rx="1" fill="#00f2fe" class="cursor" />
+    </g>
+
+    <!-- Webcam dot -->
+    <circle cx="704" cy="154" r="2" fill="#3fb950" />
+
+    <!-- KEYBOARD -->
+    <rect x="660" y="272" width="88" height="6" rx="3" fill="#30363d" />
+    <rect x="664" y="271" width="4" height="3" rx="1" fill="#484f58" />
+    <rect x="671" y="271" width="4" height="3" rx="1" fill="#484f58" />
+    <rect x="678" y="271" width="4" height="3" rx="1" fill="#484f58" />
+    <rect x="685" y="271" width="14" height="3" rx="1" fill="#484f58" />
+    <rect x="702" y="271" width="4" height="3" rx="1" fill="#484f58" />
+    <rect x="709" y="271" width="4" height="3" rx="1" fill="#484f58" />
+    <rect x="716" y="271" width="4" height="3" rx="1" fill="#484f58" />
+    <rect x="723" y="271" width="4" height="3" rx="1" fill="#484f58" />
+    <rect x="730" y="271" width="4" height="3" rx="1" fill="#484f58" />
+    <rect x="737" y="271" width="4" height="3" rx="1" fill="#484f58" />
+
+    <!-- COFFEE MUG -->
+    <rect x="785" y="252" width="18" height="20" rx="3" fill="#484f58" />
+    <path d="M 803 256 C 812 256, 812 268, 803 268" fill="none" stroke="#484f58" stroke-width="2" />
+    <text x="790" y="267" font-size="8" fill="#ff9900">☕</text>
+    <!-- Steam -->
+    <circle cx="790" cy="248" r="3" fill="#8b949e" opacity="0.3" class="steam" />
+    <circle cx="796" cy="246" r="2.5" fill="#8b949e" opacity="0.2" class="steam2" />
+
+    <!-- ===== DEV BOY CHARACTER ===== -->
+    <g class="dev-breathe">
+      <!-- BODY / HOODIE -->
+      <path d="M 810 200 C 810 190, 855 185, 855 200 L 860 270 L 805 270 Z" fill="#1f6feb" />
+      <!-- Hoodie pocket line -->
+      <line x1="820" y1="240" x2="845" y2="240" stroke="#1158c7" stroke-width="1.5" opacity="0.6" />
+      <!-- Hood strings -->
+      <line x1="825" y1="210" x2="822" y2="225" stroke="#ffffff" stroke-width="1" opacity="0.4" />
+      <line x1="840" y1="210" x2="843" y2="225" stroke="#ffffff" stroke-width="1" opacity="0.4" />
+    </g>
+
+    <!-- NECK -->
+    <rect x="826" y="178" width="12" height="14" rx="3" fill="#f0c8a0" />
+
+    <!-- HEAD -->
+    <ellipse cx="832" cy="155" rx="30" ry="32" fill="#f0c8a0" />
+
+    <!-- HAIR -->
+    <path d="M 802 150 C 802 118, 862 118, 862 150 C 858 130, 806 130, 802 150 Z" fill="#2c1810" />
+    <path d="M 802 148 C 800 138, 804 128, 812 125" fill="none" stroke="#2c1810" stroke-width="6" stroke-linecap="round" />
+
+    <!-- EYES -->
+    <ellipse cx="822" cy="152" rx="4" ry="4.5" fill="#ffffff" />
+    <ellipse cx="842" cy="152" rx="4" ry="4.5" fill="#ffffff" />
+    <circle cx="823" cy="153" r="2.5" fill="#1c1c1c" />
+    <circle cx="843" cy="153" r="2.5" fill="#1c1c1c" />
+    <circle cx="824" cy="151.5" r="1" fill="#ffffff" />
+    <circle cx="844" cy="151.5" r="1" fill="#ffffff" />
+
+    <!-- EYEBROWS -->
+    <line x1="817" y1="143" x2="827" y2="144" stroke="#2c1810" stroke-width="2" stroke-linecap="round" />
+    <line x1="837" y1="144" x2="847" y2="143" stroke="#2c1810" stroke-width="2" stroke-linecap="round" />
+
+    <!-- SMILE -->
+    <path d="M 824 166 Q 832 174, 840 166" fill="none" stroke="#c47a5a" stroke-width="2" stroke-linecap="round" />
+
+    <!-- HEADPHONES -->
+    <path d="M 800 148 A 35 35 0 0 1 864 148" fill="none" stroke="#30363d" stroke-width="5" />
+    <rect x="795" y="142" width="10" height="18" rx="5" fill="#30363d" />
+    <rect x="859" y="142" width="10" height="18" rx="5" fill="#30363d" />
+    <rect x="797" y="144" width="6" height="14" rx="3" fill="#00f2fe" opacity="0.8" />
+    <rect x="861" y="144" width="6" height="14" rx="3" fill="#00f2fe" opacity="0.8" />
+
+    <!-- ARMS & HANDS ON KEYBOARD -->
+    <g class="hand-anim">
+      <!-- Left arm -->
+      <path d="M 812 225 Q 780 250, 740 268" fill="none" stroke="#1f6feb" stroke-width="12" stroke-linecap="round" />
+      <ellipse cx="738" cy="270" rx="8" ry="5" fill="#f0c8a0" />
+      <!-- Right arm -->
+      <path d="M 850 225 Q 840 250, 720 268" fill="none" stroke="#1f6feb" stroke-width="12" stroke-linecap="round" />
+      <ellipse cx="718" cy="270" rx="8" ry="5" fill="#f0c8a0" />
+    </g>
+
+    <!-- CHAIR -->
+    <path d="M 800 270 Q 800 290, 810 300 L 850 300 Q 860 290, 860 270" fill="none" stroke="#484f58" stroke-width="3" />
+    <rect x="820" y="298" width="22" height="6" rx="3" fill="#484f58" />
+    <line x1="831" y1="304" x2="831" y2="314" stroke="#484f58" stroke-width="3" />
+    <circle cx="820" cy="314" r="4" fill="#30363d" />
+    <circle cx="842" cy="314" r="4" fill="#30363d" />
+  </g>
+
+  <!-- ===== FLOATING TECH BADGES ===== -->
+  <g class="bf1">
+    <rect x="586" y="55" width="55" height="24" rx="8" fill="#161b22" stroke="#ff9900" stroke-width="1.5" />
+    <text x="614" y="72" text-anchor="middle" font-family="'SF Mono','Fira Code',monospace" font-size="11" font-weight="700" fill="#ff9900">AWS</text>
+  </g>
+  <g class="bf2">
+    <rect x="820" y="60" width="55" height="24" rx="8" fill="#161b22" stroke="#326ce5" stroke-width="1.5" />
+    <text x="848" y="77" text-anchor="middle" font-family="'SF Mono','Fira Code',monospace" font-size="11" font-weight="700" fill="#326ce5">K8s</text>
+  </g>
+  <g class="bf3">
+    <rect x="690" y="45" width="68" height="24" rx="8" fill="#161b22" stroke="#2496ed" stroke-width="1.5" />
+    <text x="724" y="62" text-anchor="middle" font-family="'SF Mono','Fira Code',monospace" font-size="11" font-weight="700" fill="#2496ed">Docker</text>
+  </g>
+  <g class="bf4">
+    <rect x="770" y="90" width="80" height="24" rx="8" fill="#161b22" stroke="#844fba" stroke-width="1.5" />
+    <text x="810" y="107" text-anchor="middle" font-family="'SF Mono','Fira Code',monospace" font-size="11" font-weight="700" fill="#844fba">Terraform</text>
+  </g>
+  <g class="bf2">
+    <rect x="600" y="95" width="72" height="24" rx="8" fill="#161b22" stroke="#d24939" stroke-width="1.5" />
+    <text x="636" y="112" text-anchor="middle" font-family="'SF Mono','Fira Code',monospace" font-size="11" font-weight="700" fill="#d24939">Jenkins</text>
+  </g>
+
+  <!-- ===== AMBIENT PARTICLES ===== -->
+  <circle cx="580" cy="140" r="1.5" fill="#00f2fe" opacity="0.4" class="bf1" />
+  <circle cx="870" cy="130" r="1" fill="#79c0ff" opacity="0.3" class="bf3" />
+  <circle cx="650" cy="85" r="1.5" fill="#7ee787" opacity="0.3" class="bf2" />
+  <circle cx="880" cy="180" r="1" fill="#d2a8ff" opacity="0.3" class="bf4" />
 </svg>
