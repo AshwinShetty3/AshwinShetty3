@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 90" width="100%" height="90">
+  <defs>
+    <linearGradient id="laserGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0" />
+      <stop offset="50%" stop-color="#00f2fe" stop-opacity="1" />
+      <stop offset="100%" stop-color="#79c0ff" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#161b22" stop-opacity="0.2" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    @keyframes pulseLine {
+      0%, 100% { opacity: 0.3; transform: scaleX(0.8); }
+      50% { opacity: 1; transform: scaleX(1); }
+    }
+    @keyframes floatParticle {
+      0% { transform: translateY(0px) translateX(0px); opacity: 0; }
+      20% { opacity: 1; }
+      80% { opacity: 0.8; }
+      100% { transform: translateY(-80px) translateX(25px); opacity: 0; }
+    }
+    @keyframes fallParticle {
+      0% { transform: translateY(-10px) translateX(0px); opacity: 0; }
+      20% { opacity: 0.9; }
+      80% { opacity: 0.8; }
+      100% { transform: translateY(100px) translateX(-15px); opacity: 0; }
+    }
+    @keyframes scanBeam {
+      0% { transform: translateX(-600px); }
+      100% { transform: translateX(1200px); }
+    }
+
+    .p-cyan { fill: #00f2fe; filter: drop-shadow(0 0 4px #00f2fe); }
+    .p-purple { fill: #a5d6ff; filter: drop-shadow(0 0 4px #a5d6ff); }
+    .p-white { fill: #ffffff; filter: drop-shadow(0 0 2px #ffffff); }
+
+    .pf1 { animation: floatParticle 6s ease-in-out infinite; }
+    .pf2 { animation: floatParticle 8s ease-in-out infinite 1.5s; }
+    .pf3 { animation: floatParticle 7s ease-in-out infinite 3.0s; }
+    .pf4 { animation: floatParticle 9s ease-in-out infinite 0.8s; }
+
+    .sf1 { animation: fallParticle 6s linear infinite 0.2s; }
+    .sf2 { animation: fallParticle 8s linear infinite 2.2s; }
+    .sf3 { animation: fallParticle 7s linear infinite 4.1s; }
+    .sf4 { animation: fallParticle 9s linear infinite 1.0s; }
+
+    .beam { animation: scanBeam 4s ease-in-out infinite; }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="1200" height="90" fill="url(#bgGrad)" rx="8" />
+
+  <!-- Animated Glowing Laser Line -->
+  <rect x="0" y="85" width="1200" height="2" fill="url(#laserGrad)" />
+  <rect class="beam" x="0" y="84" width="300" height="4" fill="#00f2fe" filter="drop-shadow(0 0 8px #00f2fe)" opacity="0.8" />
+
+  <!-- Rising Floating Tech Particles -->
+  <circle cx="90" cy="80" r="3" class="p-cyan pf1" />
+  <circle cx="240" cy="80" r="2.5" class="p-purple pf2" />
+  <circle cx="390" cy="80" r="3.5" class="p-cyan pf3" />
+  <circle cx="540" cy="80" r="2" class="p-white pf4" />
+  <circle cx="690" cy="80" r="3" class="p-cyan pf1" />
+  <circle cx="840" cy="80" r="2.5" class="p-purple pf3" />
+  <circle cx="990" cy="80" r="3.5" class="p-cyan pf2" />
+  <circle cx="1120" cy="80" r="2" class="p-white pf4" />
+
+  <!-- Falling Snow Particles over Tech Stack -->
+  <circle cx="150" cy="0" r="2.5" class="p-white sf1" />
+  <circle cx="300" cy="0" r="3" class="p-cyan sf2" />
+  <circle cx="450" cy="0" r="2" class="p-purple sf3" />
+  <circle cx="600" cy="0" r="3.5" class="p-white sf4" />
+  <circle cx="750" cy="0" r="2.5" class="p-cyan sf1" />
+  <circle cx="900" cy="0" r="3" class="p-purple sf3" />
+  <circle cx="1050" cy="0" r="2" class="p-white sf2" />
+</svg>

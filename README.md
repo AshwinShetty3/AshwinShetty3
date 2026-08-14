@@ -72,6 +72,11 @@
 <!-- ========================================== -->
 <h2>🛠️ Tech Stack & DevOps Ecosystem</h2>
 
+<div align="center">
+  <img src="https://raw.githubusercontent.com/AshwinShetty3/AshwinShetty3/main/assets/tech_animation.svg" width="100%" alt="Tech Ecosystem Animation" />
+</div>
+<br/>
+
 <table width="100%">
   <tr>
     <td width="33%" valign="top">
