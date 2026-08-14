@@ -29,7 +29,16 @@
 <!-- TERMINAL / ABOUT ME                        -->
 <!-- ========================================== -->
 <div align="center">
-  <img src="https://raw.githubusercontent.com/AshwinShetty3/AshwinShetty3/main/assets/giphy.gif" width="400" alt="Ashwin Shetty - DevOps Coder Animation" />
+  <table>
+    <tr>
+      <td width="60%">
+        <img src="https://raw.githubusercontent.com/AshwinShetty3/AshwinShetty3/main/assets/coder_boy.svg" width="100%" alt="Ashwin Shetty - Terminal About Me" />
+      </td>
+      <td width="40%" align="center">
+        <img src="https://raw.githubusercontent.com/AshwinShetty3/AshwinShetty3/main/assets/giphy.gif" width="280" alt="Ashwin Shetty - DevOps Coder Animation" />
+      </td>
+    </tr>
+  </table>
 </div>
 
 <br/>
