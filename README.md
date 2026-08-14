@@ -1,7 +1,7 @@
 <div align="center">
   <!-- Typing Header SVG -->
   <a href="https://ashwinshetty.site/">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=00F2FE&center=true&vCenter=true&repeat=true&width=700&height=70&lines=Hi+there!+I'm+Ashwin+Shetty+👋;DevOps+%26+Cloud+Infrastructure+Engineer+🚀;Kubernetes+%26+Docker+Specialist+🐳;Automating+CI%2FCD+%26+IaC+at+Scale+⚡" alt="Typing Header" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=25&pause=1000&color=00F2FE&center=true&vCenter=true&repeat=true&width=650&height=55&lines=Hi+there!+I'm+Ashwin+Shetty;DevOps+and+Cloud+Infrastructure+Engineer;Kubernetes+and+Docker+Specialist;Automating+CICD+and+IaC+at+Scale" alt="Ashwin Shetty - DevOps & Cloud Infrastructure Engineer" />
   </a>
 
   <p align="center">
@@ -131,25 +131,12 @@
 <br/>
 
 <!-- ========================================== -->
-<!-- GITHUB STATS & ANALYTICS                   -->
+<!-- GITHUB ACTIVITY GRAPH                      -->
 <!-- ========================================== -->
 <h2 align="center">📈 GitHub Activity & Analytics</h2>
 
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=AshwinShetty3&theme=tokyonight&hide_border=true" height="170" alt="GitHub Streak Stats" />
-  <img src="https://github-readme-stats.vercel.app/api?username=AshwinShetty3&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" height="170" alt="GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AshwinShetty3&layout=compact&theme=tokyonight&hide_border=true&card_width=300" height="170" alt="Top Languages" />
-</div>
-
-<br/>
-
-<!-- ========================================== -->
-<!-- GITHUB TROPHIES                            -->
-<!-- ========================================== -->
-<h2 align="center">🏆 GitHub Achievements & Trophies</h2>
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=AshwinShetty3&theme=tokyonight&no-frame=true&column=6&margin-w=10" alt="GitHub Trophies" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=AshwinShetty3&theme=tokyo-night&stroke=00f2fe&background=0d1117" width="100%" alt="GitHub Activity Graph" />
 </div>
 
 <br/>
