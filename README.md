@@ -135,6 +135,8 @@
 <h2 align="center">📈 GitHub Activity & Analytics</h2>
 
 <div align="center">
+  <img src="https://raw.githubusercontent.com/AshwinShetty3/AshwinShetty3/main/assets/snowfall.svg" width="100%" alt="Falling Snow Animation" />
+  <br/><br/>
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=sindresorhus&theme=tokyo-night&stroke=00f2fe&background=0d1117&custom_title=Ashwin%20Shetty's%20Contribution%20Graph" width="100%" alt="GitHub Activity Graph" />
 </div>
 
