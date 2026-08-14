@@ -100,12 +100,11 @@
       <h4>📊 Observability & Logs</h4>
       <img src="https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white" />
       <img src="https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white" />
+      <img src="https://img.shields.io/badge/PM2-2B037A?style=flat-square&logo=pm2&logoColor=white" />
     </td>
     <td width="33%" valign="top">
-      <h4>💻 Languages & Backend</h4>
+      <h4>💻 Languages & Development</h4>
       <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
-      <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" />
-      <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
       <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" />
       <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" />
     </td>
@@ -122,7 +121,7 @@
 <!-- ========================================== -->
 <!-- SNAKE ANIMATION SECTION                    -->
 <!-- ========================================== -->
-<h2 align="center">🐍 Contribution Snake</h2>
+<h2 align="center">Total Contribution</h2>
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/AshwinShetty3/AshwinShetty3/output/snake.svg" alt="Contribution Snake Animation" width="100%" />
@@ -146,6 +145,4 @@
 <!-- ========================================== -->
 <hr/>
 <div align="center">
-  <p><i>⚡ "Infrastructure as Code, Deployment as a Culture." ⚡</i></p>
-  <p>Designed with ❤️ by <b><a href="https://ashwinshetty.site/">Ashwin Shetty</a></b></p>
 </div>
