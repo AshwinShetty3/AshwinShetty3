@@ -72,27 +72,27 @@
 <!-- ========================================== -->
 <h2>🛠️ Tech Stack & DevOps Ecosystem</h2>
 
-<div align="center">
-  <img src="https://raw.githubusercontent.com/AshwinShetty3/AshwinShetty3/main/assets/tech_animation.svg" width="100%" alt="Tech Ecosystem Animation" />
-</div>
-<br/>
-
-<table width="100%">
+<table width="100%" background="https://raw.githubusercontent.com/AshwinShetty3/AshwinShetty3/main/assets/snowfall.svg">
   <tr>
-    <td width="33%" valign="top">
+    <td colspan="3" align="center">
+      <img src="https://raw.githubusercontent.com/AshwinShetty3/AshwinShetty3/main/assets/tech_animation.svg" width="100%" height="50" alt="Tech Animation Header" />
+    </td>
+  </tr>
+  <tr>
+    <td width="33%" valign="top" background="https://raw.githubusercontent.com/AshwinShetty3/AshwinShetty3/main/assets/snowfall.svg">
       <h4>☁️ Cloud & Infrastructure</h4>
       <img src="https://img.shields.io/badge/AWS-FF9900?style=flat-square&logo=amazon-aws&logoColor=white" />
       <img src="https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white" />
       <img src="https://img.shields.io/badge/Ansible-EE0000?style=flat-square&logo=ansible&logoColor=white" />
       <img src="https://img.shields.io/badge/Linux/Bash-FCC624?style=flat-square&logo=linux&logoColor=black" />
     </td>
-    <td width="33%" valign="top">
+    <td width="33%" valign="top" background="https://raw.githubusercontent.com/AshwinShetty3/AshwinShetty3/main/assets/snowfall.svg">
       <h4>🐳 Containers & K8s</h4>
       <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
       <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white" />
       <img src="https://img.shields.io/badge/Helm-0F1689?style=flat-square&logo=helm&logoColor=white" />
     </td>
-    <td width="33%" valign="top">
+    <td width="33%" valign="top" background="https://raw.githubusercontent.com/AshwinShetty3/AshwinShetty3/main/assets/snowfall.svg">
       <h4>🔄 CI/CD & Version Control</h4>
       <img src="https://img.shields.io/badge/Jenkins-D24939?style=flat-square&logo=jenkins&logoColor=white" />
       <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white" />
@@ -101,19 +101,19 @@
     </td>
   </tr>
   <tr>
-    <td width="33%" valign="top">
+    <td width="33%" valign="top" background="https://raw.githubusercontent.com/AshwinShetty3/AshwinShetty3/main/assets/snowfall.svg">
       <h4>📊 Observability & Logs</h4>
       <img src="https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white" />
       <img src="https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white" />
       <img src="https://img.shields.io/badge/PM2-2B037A?style=flat-square&logo=pm2&logoColor=white" />
     </td>
-    <td width="33%" valign="top">
+    <td width="33%" valign="top" background="https://raw.githubusercontent.com/AshwinShetty3/AshwinShetty3/main/assets/snowfall.svg">
       <h4>💻 Languages & Development</h4>
       <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
       <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" />
       <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" />
     </td>
-    <td width="33%" valign="top">
+    <td width="33%" valign="top" background="https://raw.githubusercontent.com/AshwinShetty3/AshwinShetty3/main/assets/snowfall.svg">
       <h4>🗄️ Databases & Tools</h4>
       <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" />
       <img src="https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white" />
