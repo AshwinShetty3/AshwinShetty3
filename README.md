@@ -29,7 +29,7 @@
 <!-- TERMINAL / ABOUT ME                        -->
 <!-- ========================================== -->
 <div align="center">
-  <img src="https://raw.githubusercontent.com/AshwinShetty3/AshwinShetty3/main/assets/coder_boy.svg" width="100%" alt="Ashwin Shetty - Animated Coder Boy Terminal" />
+  <img src="https://raw.githubusercontent.com/AshwinShetty3/AshwinShetty3/main/assets/giphy.gif" width="400" alt="Ashwin Shetty - DevOps Coder Animation" />
 </div>
 
 <br/>
